@@ -1,11 +1,11 @@
 f = figure;
 T = tiledlayout(3, 5,"TileSpacing","loose", "Padding", "loose");
-subjs = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16, 18, 19];
+subjs = 1:20
 load("subj_trial_meta.mat")
 
 risk = zeros(15,1);
 
-for j = 1:15
+for j = 1:20
     sub = subjs(j);
     if sub < 10
         load("data/GTH_s0" + sub + "_decision_power_struct_nobs.mat");
