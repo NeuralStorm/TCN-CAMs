@@ -1,5 +1,5 @@
 peaks = []
-for j = 13:14
+for j = 6:21
     fftLength = 3;
     int2str(j)
     loadedData = load(['dEEG00', int2str(j),  '/subject_00', int2str(j), '_data.mat']);
